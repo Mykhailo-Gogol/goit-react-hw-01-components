@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Mykhailo-Gogol/goit-react-hw-01-components/static/css/main.81a0fa02.chunk.css",
-    "main.js": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/main.eed7e87e.chunk.js",
-    "main.js.map": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/main.eed7e87e.chunk.js.map",
-    "runtime-main.js": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/runtime-main.8c27f066.js",
-    "runtime-main.js.map": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/runtime-main.8c27f066.js.map",
-    "static/js/2.aa41328a.chunk.js": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/2.aa41328a.chunk.js",
-    "static/js/2.aa41328a.chunk.js.map": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/2.aa41328a.chunk.js.map",
-    "index.html": "/Mykhailo-Gogol/goit-react-hw-01-components/index.html",
-    "static/css/main.81a0fa02.chunk.css.map": "/Mykhailo-Gogol/goit-react-hw-01-components/static/css/main.81a0fa02.chunk.css.map",
-    "static/js/2.aa41328a.chunk.js.LICENSE.txt": "/Mykhailo-Gogol/goit-react-hw-01-components/static/js/2.aa41328a.chunk.js.LICENSE.txt"
+    "main.css": "/goit-react-hw-01-components/static/css/main.81a0fa02.chunk.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.eed7e87e.chunk.js",
+    "main.js.map": "/goit-react-hw-01-components/static/js/main.eed7e87e.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-01-components/static/js/runtime-main.9c91bdbc.js",
+    "runtime-main.js.map": "/goit-react-hw-01-components/static/js/runtime-main.9c91bdbc.js.map",
+    "static/js/2.aa41328a.chunk.js": "/goit-react-hw-01-components/static/js/2.aa41328a.chunk.js",
+    "static/js/2.aa41328a.chunk.js.map": "/goit-react-hw-01-components/static/js/2.aa41328a.chunk.js.map",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "static/css/main.81a0fa02.chunk.css.map": "/goit-react-hw-01-components/static/css/main.81a0fa02.chunk.css.map",
+    "static/js/2.aa41328a.chunk.js.LICENSE.txt": "/goit-react-hw-01-components/static/js/2.aa41328a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c27f066.js",
+    "static/js/runtime-main.9c91bdbc.js",
     "static/js/2.aa41328a.chunk.js",
     "static/css/main.81a0fa02.chunk.css",
     "static/js/main.eed7e87e.chunk.js"
