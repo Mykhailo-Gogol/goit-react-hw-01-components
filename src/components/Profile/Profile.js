@@ -32,11 +32,13 @@ Profile.defaultProps = {
     avatar:
       "https://moonvillageassociation.org/wp-content/uploads/2018/06/default-profile-picture1.jpg",
     name: "User",
-    tag: "#",
+    tag: "tag",
     location: "Location",
-    followers: "0",
-    views: "0",
-    likes: "0",
+    stats: {
+      followers: 0,
+      views: 0,
+      likes: 0,
+    },
   },
 };
 
