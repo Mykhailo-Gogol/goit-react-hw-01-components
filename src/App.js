@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Profile from "./components/Profile/Profile";
+import Profile from "./components/Profile";
 import profileData from "./user.json";
 
 export default class App extends Component {
