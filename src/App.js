@@ -10,6 +10,8 @@ import statisticsData from "./statistical-data.json";
 import FriendList from "./components/FriendList";
 import friendsData from "./friends.json";
 
+import TransactionHistory from "./components/TransactionHistory";
+import transactionsData from "./transactions.json";
 export default class App extends Component {
   render() {
     return (
@@ -17,6 +19,7 @@ export default class App extends Component {
         <Profile profile={profileData} />
         <Statistics title="Upload stats" stats={statisticsData} />
         <FriendList friends={friendsData} />
+        <TransactionHistory transactions={transactionsData} />
       </div>
     );
   }

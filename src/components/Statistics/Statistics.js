@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes, { shape } from "prop-types";
+import PropTypes from "prop-types";
 import * as s from "./Statistics.module.css";
 
 class Statistics extends Component {
@@ -36,6 +36,10 @@ class Statistics extends Component {
     );
   }
 }
+
+Statistics.defaultProps = {
+  friends: [],
+};
 
 Statistics.propTypes = {
   stats: PropTypes.array.isRequired,

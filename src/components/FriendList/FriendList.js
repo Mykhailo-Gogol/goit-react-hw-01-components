@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Component } from "react";
-import PropTypes, { shape } from "prop-types";
+import PropTypes from "prop-types";
 
 import * as s from "./FriendList.module.css";
 
@@ -31,6 +32,10 @@ class FriendList extends Component {
     );
   }
 }
+
+FriendList.defaultProps = {
+  friends: [],
+};
 
 FriendList.propTypes = {
   friends: PropTypes.array.isRequired,

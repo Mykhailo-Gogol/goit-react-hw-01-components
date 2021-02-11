@@ -8,13 +8,14 @@
   justify-content: center;
 
   max-width: 200px;
-  border: 1px solid #606060;
+  /* border: 1px solid #606060; */
 
   margin-left: auto;
   margin-right: auto;
 
   background-color: #fff;
   margin-bottom: 150px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .item {
@@ -22,8 +23,16 @@
   align-items: center;
   justify-content: space-between;
   min-width: 100px;
-  background-color: rgba(216, 216, 216, 0.1);
+  /* background-color: rgba(216, 216, 216, 0.1); */
   padding: 5px 10px;
+}
+
+.item:hover {
+  background-color: #606060;
+}
+
+.item:hover .name {
+  color: #fff;
 }
 
 .item:not(:last-child) {
@@ -31,8 +40,8 @@
 }
 
 .status {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: red;
 }
