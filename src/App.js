@@ -15,7 +15,7 @@ import transactionsData from "./transactions.json";
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Profile profile={profileData} />
         <Statistics title="Upload stats" stats={statisticsData} />
         <FriendList friends={friendsData} />

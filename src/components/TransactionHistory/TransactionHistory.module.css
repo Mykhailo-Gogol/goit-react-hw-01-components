@@ -4,9 +4,9 @@
 
 .transactionHistory {
   width: 600px;
-
+  color: white;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .head {
@@ -16,5 +16,5 @@
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid white;
 }
