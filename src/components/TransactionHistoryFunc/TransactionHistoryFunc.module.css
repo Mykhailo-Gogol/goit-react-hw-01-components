@@ -1,0 +1,20 @@
+.transactionContainer {
+  padding-bottom: 150px;
+}
+
+.transactionHistory {
+  width: 600px;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+.head {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+}
