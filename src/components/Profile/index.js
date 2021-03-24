@@ -1,32 +1,27 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React, { Component } from "react";
 import PropTypes, { shape } from "prop-types";
-
 import * as s from "./Profile.module.css";
 
-class Profile extends Component {
-  render() {
-    const { avatar, name, tag, location, stats } = this.props.profile;
+const Profile = ({ profile }) => {
+  const { avatar, name, tag, location, stats } = profile;
 
-    return (
-      <div className={s.profile}>
-        <div className={s.profile__top}>
-          <img className={s.profile__image} src={avatar} />
-          <p className={s.profile__name}>{name}</p>
-          <p className={s.profile__tag}>&copy;{tag}</p>
-          <p className={s.profile__location}>{location}</p>
-        </div>
-        <div className={s.profile__bottom}>
-          <div className={s.profile__bottom__item}>
-            Followers {stats.followers}
-          </div>
-          <div className={s.profile__bottom__item}>Views {stats.views}</div>
-          <div className={s.profile__bottom__item}>Likes {stats.likes}</div>
-        </div>
+  return (
+    <div className={s.profile}>
+      <div className={s.profile__top}>
+        <img className={s.profile__image} src={avatar} alt="avatar" />
+        <p className={s.profile__name}>{name}</p>
+        <p className={s.profile__tag}>&copy;{tag}</p>
+        <p className={s.profile__location}>{location}</p>
       </div>
-    );
-  }
-}
+      <div className={s.profile__bottom}>
+        <div className={s.profile__bottom__item}>
+          Followers {stats.followers}
+        </div>
+        <div className={s.profile__bottom__item}>Views {stats.views}</div>
+        <div className={s.profile__bottom__item}>Likes {stats.likes}</div>
+      </div>
+    </div>
+  );
+};
 
 Profile.defaultProps = {
   profile: {
