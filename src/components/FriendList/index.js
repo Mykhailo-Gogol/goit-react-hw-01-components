@@ -1,8 +1,26 @@
+import {createUseStyles} from 'react-jss'
 import PropTypes, { arrayOf } from "prop-types";
-import * as s from "./FriendList.module.css";
-import FriendListItem from "./FriendListItem";
+import FriendListItem from "../FriendListItem";
+
+const useStyles = createUseStyles({
+  friendList: {
+  margin: 0,
+  padding: 0,
+  listStyle: 'none',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  maxWidth: 200,
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  backgroundColor: '#ffffff',
+  marginBottom: 150,
+  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'
+  }
+})
 
 const FriendList = ({ friends }) => {
+  const s = useStyles()
   return (
     <ul className={s.friendList}>
       {friends.map((friend) => (

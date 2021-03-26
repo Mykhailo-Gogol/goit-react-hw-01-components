@@ -1,7 +1,33 @@
+import { createUseStyles } from 'react-jss';
 import PropTypes from "prop-types";
-import * as s from "./TransactionHistory.module.css";
+
+const useStyle = createUseStyles({
+  transactionContainer: {
+    paddingBottom: 150,
+    '& table': {
+      border: '1px solid white'
+    },
+    '& th': {
+      border: '1px solid white'
+    },
+    '& td': {
+      border: '1px solid white'
+    },
+  },
+  transactionHistory: {
+    width: 600,
+    color: 'white',
+    margin: [0, 'auto'],
+    border: '1px solid white'
+  },
+  head: {
+    width: '100%'
+  }
+})
 
 const TransactionHistory = ({ transactions }) => {
+const s = useStyle()
+
   return (
     <div className={s.transactionContainer}>
       <table className={s.transactionHistory}>

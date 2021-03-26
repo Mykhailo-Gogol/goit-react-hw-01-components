@@ -1,8 +1,74 @@
+import {createUseStyles} from 'react-jss'
 import PropTypes, { shape } from "prop-types";
-import * as s from "./Profile.module.css";
+
+const useStyles = createUseStyles({
+  profile: {
+    overflow: 'hidden',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: 260,
+    backgroundColor: '#ffffff',
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    borderRadius: 10
+  },
+  profile__image: {
+    display: 'block',
+    width: 80,
+    height: 80,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    padding: 5,
+    border: '1px solid #282c34c2',
+    borderRadius: '50%',
+    overflow: 'hidden'
+  },
+  profile__name: {
+    fontFamily: "Verdana",
+    fontStyle: 'sans-serif',
+    textAlign: 'center',
+    fontWeight: 500,
+    fontSize: 20,
+    textDecoration: 'underline',
+    color: '#282c34c2'
+  },
+  
+  profile__tag: {
+    fontFamily: "Verdana",
+    fontStyle: 'sans-serif',
+    textAlign: 'center',
+    fontWeight: 400,
+    fontSize: 16,
+    color: '#282c34c2'
+  },
+  profile__location: {
+    fontFamily: "Verdana",
+    fontStyle: 'sans-serif',
+    textAlign: 'center',
+    fontWeight: 400,
+    fontSize: 16,
+    color: '#282c34c2'
+  },
+  profile__top: {
+    paddingTop: 30,
+    paddingBottom: 20,
+    borderBottom: '1px solid rgb(77, 77, 77)'
+  },
+  profile__bottom: {
+    display: 'flex',
+    justifyContent: 'space-evenly'
+  },
+  profile__bottom__item: {
+    minWidth: 'calc(260px / 3 - 22px)',
+    textAlign: 'center',
+    color: '#fff',
+    backgroundColor: '#282c34c2',
+    padding: 10
+  }
+})
 
 const Profile = ({ profile }) => {
   const { avatar, name, tag, location, stats } = profile;
+  const s = useStyles()
 
   return (
     <div className={s.profile}>
